@@ -13,30 +13,31 @@
  */
 int main(void)
 {
-	int i, j, k;
+	int i, e;
 
-	i = 0;
+	i = 48;
+	e = 48;
 
-	while (i < 100)
+	while (e < 58)
 	{
-		j = i % 10; /* singles digit */
-		k = i / 10; /* doubles digit */
-
-		if (k < j)
+		i = 48;
+		while (i < 58)
 		{
-			putchar(k + '0');
-			putchar(j + '0');
-
-			if (i < 89)
+			if (e != i && e < i)
 			{
-				putchar(44)
-					putchar(32)
+				putchar(e);
+				putchar(i);
+				if (i == 57 && e == 56)
+				{
+					braek;
+				}
+				putchar(',');
+				putchar(' ');
 			}
+			i++
 		}
-
-		i++
+		e++
 	}
 	putchar('\n');
-
 	return (0);
 }
