@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int alp;
+	char alp;
 
 	for (alp = "a"; alp <= "z"; alp++)
 	{
